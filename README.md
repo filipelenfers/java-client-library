@@ -1,5 +1,7 @@
-Java Client Library for DeployR
+Java (1.6) Client Library for DeployR
 ===============================
+
+*** This is a fork from the original project to support java 1.6, the original project just supports 1.7 and later. ***
 
 The [DeployR API](https://github.com/deployr/server) exposes a wide range of
 R analytics services to client application developers. These services are
