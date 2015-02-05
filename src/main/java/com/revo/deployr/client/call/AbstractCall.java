@@ -177,7 +177,7 @@ public abstract class AbstractCall implements RCall, RCoreResponse {
                 pResult.parseMarkup(markup, API, statusLine.getStatusCode(), statusLine.getReasonPhrase());
             } catch (Throwable tex) {
                 log.warn("AbstractCall: makeRequest pResult.parseMarkup throwable=" + tex);
-                throw tex;
+                throw new RuntimeException(tex);
             }
 
         } catch (UnsupportedEncodingException ueex) {
